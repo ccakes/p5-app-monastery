@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Perl Language Server",
    "author" : [
       "Cameron Daniel <cam.daniel@gmail.com>"
    ],
@@ -42,7 +42,18 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "AnyEvent" : "0",
+            "Class::Tiny" : "0",
+            "DBM::Deep" : "0",
+            "File::Find::Rule" : "0",
+            "Getopt::Long" : "0",
+            "JSON" : "0",
+            "JSON::RPC::Spec" : "0",
+            "Number::Bytes::Human" : "0",
+            "PPI" : "0",
+            "Perl::Critic" : "0",
+            "Perl::Tidy" : "0",
+            "perl" : "v5.10.0"
          }
       },
       "test" : {
@@ -52,6 +63,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ccakes/p5-app-monastery/issues"
+      },
+      "homepage" : "https://github.com/ccakes/p5-app-monastery",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ccakes/p5-app-monastery.git",
+         "web" : "https://github.com/ccakes/p5-app-monastery"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "JSON::PP version 2.27400_02"
 }

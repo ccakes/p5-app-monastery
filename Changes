@@ -2,5 +2,9 @@ Revision history for Perl extension App-Monastery
 
 {{$NEXT}}
 
-    - original version
+0.01 2017-05-11T23:23:52Z
+
+    - JSON-RPC via STDIN/STDOUT
+    - Scans @INC + project directory for symbols to use for completion
+    - Provides completion via RPC
 
