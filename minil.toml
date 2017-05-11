@@ -1,0 +1,4 @@
+name = "App-Monastery"
+# badges = ["travis"]
+module_maker="ModuleBuildTiny"
+

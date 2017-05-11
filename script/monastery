@@ -1,0 +1,33 @@
+#!/usr/bin/env perl
+# vim: set ft=perl:
+
+use feature ':5.10';
+use strict;
+use warnings;
+
+our $VERSION = '0.01';
+
+use App::Monastery;
+App::Monastery->run;
+
+__END__
+
+=encoding utf-8
+
+=head1 NAME
+
+monastery - Perl Language Server
+
+=head1 DESCRIPTION
+
+This is the script interface to L<App::Monastery>. Configure your
+editor to point here. Most documentation is available at the module
+however the script takes a single argument.
+
+=head1 SYNOPSIS
+
+monastery [options]
+
+  --log LEVEL   Uses L<AnyEvent::Log/"LOGGING-LEVELS">, logs to /tmp/perl-lang-server.log
+
+=cut
