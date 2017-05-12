@@ -132,6 +132,10 @@ sub object_instances {
     }
   }
 
+  if ($self->is_package) {
+    $list{'$self'} = $self->package;
+  }
+
   return \%list;
 }
 

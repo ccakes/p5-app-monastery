@@ -4,7 +4,7 @@ use feature ':5.10';
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use AE;
 use AnyEvent::Log;
@@ -101,8 +101,8 @@ App::Monastery - Perl Language Server
 
 =head1 DESCRIPTION
 
-App::Monastery is a language server conforming to the L<spec|https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md>. Currently
-Monastery supports a subset of v3.0 of the protocol.
+App::Monastery is a language server based on the L<Language Server Protocol|https://github.com/Microsoft/language-server-protocol/>.
+Currently Monastery supports a subset of v3.0 of the protocol.
 
 More can be read about what a Language Server is for at L<http://langserver.org>
 but the idea is to allow editors/IDEs to support a variety of languages
@@ -129,23 +129,23 @@ is a fatpacked version in author/.
 
 =over 4
 
-=item Handler.pm
+=item B<Handler.pm>
 
-This file is a mess, the C<$rpc->register> calls need to be abstracted,
+This file is a mess, the C<< $rpc->register >> calls need to be abstracted,
 ideally into a controller-type model to make adding functionality
 simpler.
 
-=item textDocument/publishDiagnostics
+=item B<textDocument/publishDiagnostics>
 
 Need to work out when best to trigger this, probably on
 C<textDocument/willSave>. C<didChange> would be nicer but a bit
 spammy. This should be C<perl -c> rather as it's syntax errors.
 
-=item textDocument/rangeFormatting
+=item B<textDocument/rangeFormatting>
 
-=item workspace/symbol + textDocument/documentSymbol
+=item B<workspace/symbol + textDocument/documentSymbol>
 
-=item Some tests...
+=item B<Some tests...>
 
 =back
 
